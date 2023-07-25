@@ -1,0 +1,89 @@
+.mainDiv {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.topImg {
+  max-width: "500px";
+  height: "100%";
+  object-fit: cover;
+}
+.overlayer {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  padding: 20px;
+  border-radius: 10px;
+}
+.topLogo{
+  position: absolute;
+  top: 2%;
+  left:2%;
+}
+.Navbar {
+  position: absolute;
+  top: 5%;
+  left: 80% ;
+}
+@media (max-width: 768px) {
+  .Navbar {
+    left: 50%; /* Center the .Navbar on smaller screens */
+    transform: translateX(-50%); /* Move the .Navbar to the center horizontally */
+  }
+}
+
+/* App.css */
+.tableSty {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableSty th,
+.tableSty td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tableSty th {
+  background-color: #f2f2f2;
+}
+
+.tableSty tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tableSty tr:hover {
+  background-color: #ddd;
+}
+.dropDown{
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+}
+.dropDownContainer{
+  display: none;
+
+  position: relative;
+}
+.dropDown:hover .dropDownContainer {
+  display: block;
+}
+#navBt {
+  position: static;
+  color: white;
+  background-color: rgb(197, 108, 224);
+  border: 1px solid aliceblue;
+  border-radius: 5%;
+  margin-left: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+#navBt:hover {
+  background-color: #e22bca; /* New background color on hover */
+}
